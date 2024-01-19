@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 /**
  *Description : a function that allocates memory using malloc
  *@n -> the size of the memory to alloc
@@ -8,11 +9,10 @@
 */
 void *malloc_checked(unsigned int b)
 {
-	int *ptr = malloc(b);
+	void *ptr = malloc(b);
 
 	if( ptr == NULL)
 	{
-		printf("Memory allocation failed\n");
 		exit(98);
 	}
 	return ptr;

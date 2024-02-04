@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- *main: Assign a random number to  n each time it is executed
+ *main - Assign a random number to  n each time it is executed
  *and print the last digit of the number in  n
  *Return: 0
  */
@@ -11,6 +11,7 @@ int main(void)
 {
 	int m;
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 

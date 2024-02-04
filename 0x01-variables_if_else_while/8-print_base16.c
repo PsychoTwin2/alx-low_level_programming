@@ -9,14 +9,13 @@ int main(void)
 	char c;
 	int digit;
 
-	for (c = 'a'; c <= 'f'; c++)
-	{
-		putchar(c);
-	}
-
 	for ( digit = 0; digit < 10; digit++)
 	{
 		putchar((digit % 10) + '0');
+	}
+	for (c = 'a'; c <= 'f'; c++)
+	{
+		putchar(c);
 	}
 	putchar('\n');
 	return (0);
